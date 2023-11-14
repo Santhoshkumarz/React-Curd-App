@@ -1,0 +1,87 @@
+@media only screen and (max-width: 600px){
+
+.card_container{
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+}
+
+.card{
+  border: 1px solid;
+  height: 130px;
+  width: 330px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.h3{
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+
+}
+.toggle {
+    position: relative;
+    display: flex;
+    top: 5px;
+  }
+  
+  .actives{
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle .onoff {
+    
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 40px;
+    height: 17px;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    transition: 0.4s;
+    top: 3px;
+    left: 5px;
+  }
+  
+  input:checked + .slider {
+    background-color: #fd5d00;
+    box-shadow: 0 0 12px #fd5d00;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  .slider.round::before {
+    border-radius: 20px;
+  }
+}
